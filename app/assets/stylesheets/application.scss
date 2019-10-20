@@ -1,0 +1,26 @@
+$font-family-sans-serif: OpenSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size-base: 1.75rem;
+
+@import "./_open_sans";
+@import "./_alfios";
+@import "bootstrap";
+
+html, body {
+    height: 100%;
+}
+
+.cover {
+    font-family: Alfios;
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+}

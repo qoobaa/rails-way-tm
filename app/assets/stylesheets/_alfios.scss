@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Alfios;
+    src: font-url("Alfios_R.eot") format("eot"),
+         font-url("Alfios_R.woff") format("woff"),
+         font-url("Alfios_R.ttf") format("truetype"),
+         font-url("Alfios_R.svg#Alfios") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Alfios;
+    src: font-url("Alfios_B.eot") format("eot"),
+         font-url("Alfios_B.woff") format("woff"),
+         font-url("Alfios_B.ttf") format("truetype"),
+         font-url("Alfios_B.svg#AlfiosBold") format("svg");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Alfios;
+    src: font-url("Alfios_I.eot") format("eot"),
+         font-url("Alfios_I.woff") format("woff"),
+         font-url("Alfios_I.ttf") format("truetype"),
+         font-url("Alfios_I.svg#AlfiosItalic") format("svg");
+    font-weight: normal;
+    font-style: italic;
+}
