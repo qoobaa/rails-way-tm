@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  get "/", to: "slides#start"
-  get "meme", to: "slides#meme"
+  resources :slides, only: [:show]
 
-  root to: "slides#start"
+  root to: "slides#show"
 end
