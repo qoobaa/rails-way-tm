@@ -24,3 +24,14 @@ html, body {
         font-size: 2rem;
     }
 }
+
+[data-turbolinks-preview] {
+    .loading {
+        @extend .spinner-border;
+        @extend .text-secondary;
+
+        * {
+            display: none;
+        }
+    }
+}

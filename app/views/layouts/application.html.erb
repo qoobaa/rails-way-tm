@@ -15,8 +15,9 @@
         <%= yield %>
       </div>
 
-      <div class="d-flex justify-content-between m-4">
+      <div class="d-flex justify-content-between m-3 align-items-center">
         <%= link_to_previous %>
+        <small class="text-muted"><%= slides.index(@slide) + 1 %>/<%= slides.size %></small>
         <%= link_to_next %>
       </div>
     </div>

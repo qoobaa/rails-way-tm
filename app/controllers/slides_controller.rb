@@ -4,6 +4,7 @@ class SlidesController < ApplicationController
   def show
     @slide = ActiveSupport::StringInquirer.new(params.fetch("id", "start"))
     @turbolinks = false if @slide.turbolinks_off_1? || @slide.turbolinks_off_2?
+    sleep(2) if @slide.turbolinks_flicker_2? || @slide.turbolinks_caching_2?
 
     render action: @slide
   end
@@ -14,10 +15,16 @@ class SlidesController < ApplicationController
     %w[
       start
       meme
+      turbolinks_basics
       turbolinks_off_1
       turbolinks_off_2
       turbolinks_on_1
       turbolinks_on_2
+      disabling_turbolinks
+      turbolinks_flicker_1
+      turbolinks_flicker_2
+      turbolinks_caching_1
+      turbolinks_caching_2
     ]
   end
 end
