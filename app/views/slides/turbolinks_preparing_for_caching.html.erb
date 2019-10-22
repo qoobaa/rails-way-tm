@@ -1,0 +1,20 @@
+<div class="text-center">
+  <% content_for(:title, "Preparing the Page for Caching") %>
+
+  <div>
+    <pre class="text-left">
+      <code class="javascript">
+document.addEventListener("turbolinks:before-cache", function () {
+  // …
+})
+      </code>
+    </pre>
+
+    or<br><br>
+
+    <pre>
+      <code class="html">&lt;html data-turbolinks-preview&gt;</code>
+    </pre>
+  </div>
+
+</div>

@@ -4,6 +4,7 @@ $font-size-base: 1.75rem;
 @import "./_open_sans";
 @import "./_alfios";
 @import "bootstrap";
+@import "highlight.js/scss/solarized-light";
 
 html, body {
     height: 100%;

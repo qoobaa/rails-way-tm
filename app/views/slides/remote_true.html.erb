@@ -1,0 +1,11 @@
+<div class="text-center">
+  <% content_for(:title, "remote: true") %>
+
+  <ul class="text-left">
+    <li>add a <code>data-remote="true"</code> attribute</li>
+    <li>add <code>data-method</code>, <code>data-params</code>, <code>data-type</code>, <code>data-url</code> optionally</li>
+    <li>specify a <code>.js.erb</code> response</li>
+  </ul>
+
+  <pre><code>document.getElementById("new_attendee").innerHTML = "&lt;%= j render('form') &gt;";</code></pre>
+</div>
