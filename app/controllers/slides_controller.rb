@@ -17,6 +17,8 @@ class SlidesController < ApplicationController
     %w[
       start
       meme
+      single_page_apps
+      single_page_apps_drawbacks
       turbolinks_basics
       turbolinks_off_1
       turbolinks_off_2
