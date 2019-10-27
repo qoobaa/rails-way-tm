@@ -30,7 +30,6 @@ class SlidesController < ApplicationController
       turbolinks_caching_1
       turbolinks_caching_2
       turbolinks_preparing_for_caching
-      turbolinks_docs
       remote_true
       remote_form
       rails_ujs
@@ -42,6 +41,7 @@ class SlidesController < ApplicationController
       stimulus_actions
       stimulus_targets
       stimulus_data_maps
+      resources
     ]
   end
 end
