@@ -1,0 +1,20 @@
+<div class="text-center">
+  <% content_for(:title, "Stimulus Actions") %>
+
+  <pre class="text-left">
+    <code class="html">&lt;div data-controller="gallery"&gt;
+  &lt;button data-action="click-&gt;gallery#next"&gt;…&lt;/button&gt;
+&lt;/div&gt;</code>
+  </pre>
+
+  <pre class="text-left">
+    <code class="javascript">// controllers/gallery_controller.js
+import { Controller } from "stimulus"
+
+export default class extends Controller {
+  next(event) {
+    // …
+  }
+}</code>
+  </pre>
+</div>

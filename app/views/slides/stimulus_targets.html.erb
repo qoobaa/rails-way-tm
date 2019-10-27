@@ -1,0 +1,23 @@
+<div class="text-center">
+
+  <% content_for(:title, "Stimulus Targets") %>
+
+  <pre class="text-left">
+    <code class="html">&lt;div data-controller="search"&gt;
+  &lt;input type="text" data-target="search.query"&gt;
+  &lt;div data-target="search.errorMessage"&gt;&lt;/div&gt;
+  &lt;div data-target="search.results"&gt;&lt;/div&gt;
+&lt;/div&gt;</code>
+
+    <code class="javascript">// controllers/search_controller.js
+import { Controller } from "stimulus"
+
+export default class extends Controller {
+  static targets = [ "query", "errorMessage", "results" ]
+  // …
+}</code>
+  </pre>
+
+  <code>this.[name]Target</code>&nbsp;&nbsp;&nbsp;<code>this.[name]Targets</code>&nbsp;&nbsp;&nbsp;<code>this.has[Name]Target</code>
+</div>
+

@@ -1,0 +1,19 @@
+<div class="text-center">
+
+  <% content_for(:title, "Stimulus Data Maps") %>
+
+  <pre class="text-left m-0">
+    <code class="html">&lt;div data-controller="content-loader" data-content-loader-url="/messages"&gt;
+&lt;/div&gt;</code>
+
+    <code class="javascript">// controllers/content_loader_controller.js
+import { Controller } from "stimulus"
+
+export default class extends Controller {
+  connect() {
+    fetch(this.data.get("url")).then(/* … */)
+  }
+}</code>
+  </pre>
+</div>
+
