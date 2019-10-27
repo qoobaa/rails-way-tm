@@ -42,6 +42,7 @@ class SlidesController < ApplicationController
       stimulus_targets
       stimulus_data_maps
       resources
+      questions
     ]
   end
 end
